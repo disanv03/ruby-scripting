@@ -3,7 +3,7 @@ require 'open-uri'
 require 'fileutils'
 
 # The URL of the webpage you want to extract images from
-url = 'http://www.pragprog.com'
+url = 'https://www.midjourney.com/showcase/recent/' 
 
 # The folder where the images will be saved
 folder = 'images'
