@@ -1,0 +1,5 @@
+Parsing in computing:
+	In the context of programming, a parser is a program or a component of a program that translates the input into a format more suitable for processing.
+
+Parsing is the process of understanding and interpreting the input.
+In this context of command-line argument parsing, the parsing part is the process that the program uses to understand these arguments.
