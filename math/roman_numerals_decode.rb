@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 
+# visit: https://github.com/trizen/ruby-scripts, original source.
 #convert roman numerals to arabic numbers.
 
 def roman_to_arabic(roman)
