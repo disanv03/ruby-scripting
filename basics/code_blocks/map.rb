@@ -23,4 +23,3 @@ end # => [nil, nil, "Pear"]
 cap_fruits = fruits.map do |fruit|
     fruit == 'pear' ? fruit.capitalize : fruit
 end # => ['apple', 'banana', 'Pear']
-

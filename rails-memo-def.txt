@@ -1,4 +1,0 @@
-Rake Tasks:
-  A rake task in Ruby on Rails is essentially a script written in Ruby that
-can be run from the command line or from within the Rails environment. It 
-is used to automate repetitive tasks and operations in your application.
