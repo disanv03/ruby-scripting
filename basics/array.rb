@@ -31,3 +31,9 @@ hash.class
 # shift, pop
 # unshift, append or <<
 #################
+
+
+# match integer in an array tips
+array = (1..8).map { gets.to_i }
+
+
