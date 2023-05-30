@@ -11,3 +11,12 @@ def all_tables(range = 10)
         puts ""
     end
 end
+
+# print table
+table_of_7 = (1..10).map { |i| i * 7 }
+p table_of_7
+
+# with subarray
+multi_tables = (2..10).map { |i| (1..10).map { |j| i * j } }
+p multi_tables
+
