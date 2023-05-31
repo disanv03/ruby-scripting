@@ -6,6 +6,7 @@ rand_a = (1..20).map { rand(1..100) }
 rows = 3
 cols =  4
 multi_array = Array.new(rows) { Array.new(cols, 0)} # => with 0 the value
+multi_array = Array.new(rows) { Array.new(cols) { rand(1..10) } }
 
 multi_tables = (2..20).map { |i| (1..10).map {|j| i * j } }
 
@@ -31,6 +32,10 @@ if sorted_array.include?(-6)
     puts "array includes -6"
 end
 
+negative_numbers.max
+negative_numbers.index(negatives.max) # the value that you are looking the index from
+
+sum = negative_numbers.inject(0, :+)
 
 
 
