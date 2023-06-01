@@ -29,8 +29,8 @@ sorted_array = new_again.sort_by { |n| [n.abs, n]}
 negative_numbers = sorted_array.select { |n| n < 0 }
 
 if sorted_array.include?(-6)
-    puts "array includes -6"
-end
+	puts "array includes -6"
+	end
 
 negative_numbers.max
 negative_numbers.index(negatives.max) # the value that you are looking the index from
