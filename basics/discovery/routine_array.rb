@@ -37,6 +37,7 @@ negative_numbers.index(negatives.max) # the value that you are looking the index
 
 sum = negative_numbers.inject(0, :+)
 
+negative_numbers[1..-1] # isolate the last number from the array
+negative_numbers[1..-2] # isolate the two last number from the array
 
-
-
+negative_numbers[-1] # return the last number
