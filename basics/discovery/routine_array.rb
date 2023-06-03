@@ -41,3 +41,7 @@ negative_numbers[1..-1] # isolate the last number from the array
 negative_numbers[1..-2] # isolate the two last number from the array
 
 negative_numbers[-1] # return the last number
+
+new_rand = (1..10).map { rand(1..100) }
+min_diff = new_rand.sort.each_cons(2).map{|a,b| b-a}.min
+
