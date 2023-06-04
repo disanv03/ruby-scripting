@@ -8,6 +8,11 @@ cols =  4
 multi_array = Array.new(rows) { Array.new(cols, 0)} # => with 0 the value
 multi_array = Array.new(rows) { Array.new(cols) { rand(1..10) } }
 
+# two dimensional view of the array
+multi_array.each do |row|
+  puts row.to_s
+end
+
 multi_tables = (2..20).map { |i| (1..10).map {|j| i * j } }
 
 new_array = mutli_tables[2].dup # => duplicate array
