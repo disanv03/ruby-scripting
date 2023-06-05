@@ -50,3 +50,31 @@ negative_numbers[-1] # return the last number
 new_rand = (1..10).map { rand(1..100) }
 min_diff = new_rand.sort.each_cons(2).map{|a,b| b-a}.min
 
+# prétraitement / preprocessing
+height, width = 3, 3
+grid = []
+right = Array.new(height){Array.new(width)}
+
+i = 0
+row = '000'.split('')
+grid << row
+prev = -1
+(width-1).downto(0).each do |j|
+  prev = j if row[j] == '0'
+  right[i][j] = prev
+end
+
+puts grid.inspect
+puts right.inspect
+
+  # pour les y
+down = Array.new(height) { Array.new(width) }
+
+width.times do |j|
+  prev = -1
+  (height-1).downto(0).each do |i|
+     prev = i if grid[i][j] == '0'
+     down[i][j] = prev
+  end
+end
+
