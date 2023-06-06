@@ -13,6 +13,16 @@ multi_array.each do |row|
   puts row.to_s
 end
 
+# equivalent
+grid = []
+row = '000'.split('')
+3.times do
+  grid << row.dup
+end
+
+grid = Array.new(3) { row.dup }
+
+
 multi_tables = (2..20).map { |i| (1..10).map {|j| i * j } }
 
 new_array = mutli_tables[2].dup # => duplicate array
@@ -21,6 +31,7 @@ new_array = mutli_tables[2].dup # => duplicate array
 new_a = new_array.each_cons(2).to_a
 new_a.flatten!
 
+# negate duplicate number
 counts = Hash.new(0)
 
 new_again = new_a.sort.map do |number|
@@ -35,7 +46,7 @@ negative_numbers = sorted_array.select { |n| n < 0 }
 
 if sorted_array.include?(-6)
 	puts "array includes -6"
-	end
+end
 
 negative_numbers.max
 negative_numbers.index(negatives.max) # the value that you are looking the index from
@@ -47,34 +58,30 @@ negative_numbers[1..-2] # isolate the two last number from the array
 
 negative_numbers[-1] # return the last number
 
-new_rand = (1..10).map { rand(1..100) }
+new_rand = Array.new(10) { rand(1..100) }
 min_diff = new_rand.sort.each_cons(2).map{|a,b| b-a}.min
 
-# prétraitement / preprocessing
-height, width = 3, 3
-grid = []
-right = Array.new(height){Array.new(width)}
+#demineur
+w, h = 10, 10
+new_grid = Array.new(h){Array.new(w, 0)}
 
-i = 0
-row = '000'.split('')
-grid << row
-prev = -1
-(width-1).downto(0).each do |j|
-  prev = j if row[j] == '0'
-  right[i][j] = prev
-end
-
-puts grid.inspect
-puts right.inspect
-
-  # pour les y
-down = Array.new(height) { Array.new(width) }
-
-width.times do |j|
-  prev = -1
-  (height-1).downto(0).each do |i|
-     prev = i if grid[i][j] == '0'
-     down[i][j] = prev
+for i in 0...h
+  for j in 0...w
+    if new_grid[i][j] == 'x'
+        for dx in -1..1
+	  for dy in -1..1
+	     next if dx == 0 and dy == 0
+		ni, nj = i + dx, j + dy
+		if ni.between?(0, h-1) and nj.between?(0, w-1)
+			new_grid[ni][nj] += 1 unless new_grid[ni][nj] == '.'
+		end
+	     end
+	end
+	new_grid[i][j] = '.'
+    end
   end
 end
 
+new_grid.each do |row|
+  puts row.to_s
+end
