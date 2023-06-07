@@ -85,3 +85,11 @@ end
 new_grid.each do |row|
   puts row.to_s
 end
+
+#"symbol-to-proc"
+(1..10).map {|n| n.even?}
+#=> array of false true...
+
+(1..10).select {|n| n.even?}
+(1..10).select(&:even?)
+
