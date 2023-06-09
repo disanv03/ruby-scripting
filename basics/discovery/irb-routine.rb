@@ -106,5 +106,15 @@ new_array = arr.each_with_index.map do |sub, idx|
 	sub.map { idx.even? ? '1' : '0' }
 end
 
+# chessboard
+grid = Array.new(8){ Array.new(8) }
+new_array = grid.each_with_index.map do |sub, idx1|
+	sub.each_with_index.map { |_, idx2| (idx1 + idx2).even? ? 'b' : 'n' }
+end
+
+new_array.each do |board|
+	board.to_s
+end
+
 	
 
