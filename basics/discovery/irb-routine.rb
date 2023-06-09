@@ -93,3 +93,8 @@ end
 (1..10).select {|n| n.even?}
 (1..10).select(&:even?)
 
+arr = Array.new(10) { Array.new(10, ".") }
+new_array = arr.map do |sub_array|
+	sub_array.map {|_| "."}
+end
+
