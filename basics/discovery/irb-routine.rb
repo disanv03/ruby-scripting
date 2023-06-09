@@ -95,6 +95,16 @@ end
 
 arr = Array.new(10) { Array.new(10, ".") }
 new_array = arr.map do |sub_array|
-	sub_array.map {|_| "."}
+	sub_array.map {|_| "0"}
 end
+
+new_array = arr.each_with_index.map do |sub, idx|
+	sub.map { idx == 1 ? '1' : '.' }
+end
+
+new_array = arr.each_with_index.map do |sub, idx|
+	sub.map { idx.even? ? '1' : '0' }
+end
+
+	
 
