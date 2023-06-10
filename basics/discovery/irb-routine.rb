@@ -116,5 +116,15 @@ new_array.each do |board|
 	board.to_s
 end
 
+# Enumerator
+even_numbers = Enumerator.new do |yielder|
+	number = 0
+	loop do yielder.yield number
+		number += 2
+	end
+end
+
+even_numbers.next
+
 	
 
