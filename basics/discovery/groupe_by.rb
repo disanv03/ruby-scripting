@@ -15,3 +15,20 @@ grouped_news = news.group_by { |item| item[:date].strftime('%B %Y') }
 
 sorted_news = grouped_news.sort.reverse.to_h
 
+
+students = [
+  { name: 'John', grade: 'A' },
+  { name: 'Sarah', grade: 'B' },
+  { name: 'Bob', grade: 'A' },
+  { name: 'Alice', grade: 'C' },
+  { name: 'Charlie', grade: 'B' },
+]
+
+grouped_students = students.group_by { |student| student[:grade] }
+
+grouped_students.each do |grade, students|
+  puts "Grade #{grade}:"
+  students.each do |student|
+    puts "- #{student[:name]}"
+  end
+end
