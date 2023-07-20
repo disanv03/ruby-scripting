@@ -28,5 +28,7 @@ ex = <<END
   Here you can write anything
   END
 
-
+<<any_name
+	Here you can write any text
+any_name
 
