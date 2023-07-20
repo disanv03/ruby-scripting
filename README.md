@@ -6,3 +6,4 @@
 - Visit trizen/ruby-scripts for inspiration
 - Rosetta Code and official Ruby Doc 
 - codingame.com for nice challenges to solve.
+- Ruby Cookbook by Lucas Carlson, Leonard Richardson
