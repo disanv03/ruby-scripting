@@ -19,7 +19,7 @@ data.each { |x| s << x << ' and a ' }
 data.join(' and a ')
 # => "1 and a 2 and a 3"
 
-#to simulate the behavior of Array#join we use Enumerable#each_with_index
+# to simulate the behavior of Array#join we use Enumerable#each_with_index
 s = ""
 data.each_with_index { |x, i| s << x; s << "|" if i < data.length-1 }
 # => "1|2|3"
