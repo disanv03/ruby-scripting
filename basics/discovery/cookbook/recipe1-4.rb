@@ -8,3 +8,10 @@ s = "order. wrong the in are words These"
 puts s.split(/(\s+)/).reverse.join('')
 
 s2 = "another try"
+
+# String#split method takes a regular expression to use as a separator. Each time the separator matches part of the string, the portion of the string before the separator goes into a list.
+# 
+
+puts "Three little words".split(/\s+/)
+puts "Three little words".split(/(\s+)/)
+
