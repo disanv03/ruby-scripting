@@ -15,3 +15,5 @@ s2 = "another try"
 puts "Three little words".split(/\s+/)
 puts "Three little words".split(/(\s+)/)
 
+# Because the regular expression /(\s+)/ includes a set of parentheses, the separator string themselves are included in the
+# returned list.
