@@ -13,3 +13,4 @@ puts "#{a.ord}"
 
 puts "#{97.chr}"
 puts "#{10.chr.inspect}"
+puts "#{0.chr.inspect}"
