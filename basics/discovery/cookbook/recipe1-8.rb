@@ -10,3 +10,10 @@
 # String#each is used to split a string on a given separator (by default the newline)
 
 "foo\nbar".each_line { |x| puts x }
+
+
+french = "\xc3\xa7a va"
+
+french.scan(/./) { |c| puts c }
+
+puts french.encoding
