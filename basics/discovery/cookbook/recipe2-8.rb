@@ -36,4 +36,7 @@ def modes(array, find_all=true)
   return modes ? modes[1..modes.size] : modes
 end
 
-# next play with inject, hash, each_pair
+# Memo: In Ruby, any value that is not 'nil' or 'false' is condisered to be 'true'
+# so, when checked 'if modes' is checking if 'modes is not 'nil' or 'false'
+# !modes is checking if is 'nil' or 'false'
+# 'modes[1..1] == modes[1] 
