@@ -20,3 +20,12 @@ constants = Matrix[[Rational(54)], [Rational(30)], [Rational(35)]]
 
 solutions = coefficients.inverse * constants
 puts solutions
+
+# info note:
+# "reciprocal" and "multiplicative inverse" are often used ase the same.
+ result1 = 10 / 2
+ puts result1 #=> 5
+
+ reciprocal_of_2 = 1.0 / 2
+ result2 = 10 * reciprocal_of_2
+ puts result2 #=> 5
