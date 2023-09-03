@@ -15,3 +15,10 @@ primes.each { |x| puts x; break if x > 15; }
 
 # Sieve of Eratosthenes algorithm
 # which finds all primes in a certain range
+
+class Prime
+  @@primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
+              67, 71, 73, 79, 83, 89, 97, 101]
+  @@check_next = 103
+end
+
