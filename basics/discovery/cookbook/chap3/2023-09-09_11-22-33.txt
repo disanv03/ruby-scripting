@@ -1,0 +1,12 @@
+Explain UTC time
+UTC stands for Coordinated Universal Time. It is a time standard used in various fields worldwide, including aviation, telecommunications, and computer systems. UTC is based on atomic time, which is highly precise and stable.
+
+UTC does not observe daylight saving time, so it remains constant throughout the year. It is used as a reference time for coordinating activities and synchronizing clocks across different time zones.
+
+UTC is often used as a basis for converting local times to a common standard. To convert local time to UTC, one needs to consider the time difference between the local time zone and UTC. For example, if the local time is 3 PM and the time difference is +2 hours, then the corresponding UTC time would be 1 PM.
+
+UTC is represented in a 24-hour format, where the time is expressed as hours, minutes, and seconds. It is also often accompanied by a "+/-" sign and a numerical value denoting the time difference from UTC, such as UTC+3 or UTC-5.
+
+Overall, UTC serves as a global time standard that allows for consistent timekeeping and coordination across various regions and industries.
+UTC stand for ?
+UTC stands for Coordinated Universal Time.
