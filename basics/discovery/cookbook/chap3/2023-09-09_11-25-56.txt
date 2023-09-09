@@ -1,8 +1,0 @@
-In Ruby gmtime method is for GM time
-Yes, in Ruby, the `gmtime` method is used to get the current time in Greenwich Mean Time (GMT) or Coordinated Universal Time (UTC). It returns a `Time` object representing the current time in UTC.
-Greenwich mean Time is +1 from UTC ?
-No, Greenwich Mean Time (GMT) is not +1 from Coordinated Universal Time (UTC). GMT is the same as UTC, meaning there is no time difference between the two. They are both used as standard time references worldwide.
-GMP = UTC
-No, GMP is not equal to UTC. GMP (Generalized Mersenne Prime) is a concept in mathematics related to prime numbers, whereas UTC (Coordinated Universal Time) is the standard time reference used worldwide. They are unrelated concepts.
-GMT = UTC
-Yes, GMT (Greenwich Mean Time) is the same as UTC (Coordinated Universal Time). Both GMT and UTC are used as standard time references worldwide and have the same time value.
