@@ -59,8 +59,12 @@ p a.values_at(4, 6, 6, 7, 4, 0, 3)
 # Enumerable#find_all finds all elements in an array for which the specified code block 
 # returns true.
 # Enumerable#reject will find all elements for which the specified code block returns false.
+# NOTE: In ruby, 'find_all' and 'select' are aliases for the same method when used on an 'Enumerable'
+# both iterate over the elements and return an array containing all the elements for which the given
+# block returns a truthy value
 
 p a.find_all { |x| x < "e" }
+p a.select { |x| x < "e" }
 # p a.reject { |x| x < "e" }
 
 # To find all elements in an array that match a regular expression, you can use
