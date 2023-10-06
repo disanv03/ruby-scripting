@@ -3,4 +3,5 @@
 ### Resources:
 - Ruby Cookbook by Lucas Carlson, Leonard Richardson
 - Various codingame.com challenges codes.
-- Exploring varied Ruby source documentation
+- Diverses Ruby source documentation
+- Detailed personal notes and comments
