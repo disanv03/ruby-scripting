@@ -55,3 +55,32 @@ lottery_probabilities = { "You've wasted your money" => 1000,
                           "You've won a hundred zorkmids !" => 1 }
 
 5.times { puts choose_weighted(lottery_probabilities) }
+
+def normalize!(weighted)
+  sum = weighted.inject(0) do |sum, item_and_weight|
+    sum += item_and_weight[1]
+  end
+  sum = sum.to_f
+  weighted.each { |item, weight| weighted[item] = weight/sum }
+end
+
+lottery_probabilities["You've won five hundred zorkmids!"] = 0.1
+p normalize!(lottery_probabilities)
+
+def choose_weighted_assuming_unity(weighted)
+  target = rand
+  weighted.each do |item, weight|
+    return item if target <= weight
+    target -= weight
+  end
+end
+
+5.times { puts choose_weighted_assuming_unity(lottery_probabilities) }
+
+##################################################
+# NOTE:
+# traget = rand, generates a random floating-point number between
+# '0' and '1'
+# Normalizing is useful for scaling between 0 and 1, while preserving 
+# the proportion between different weights.
+##################################################
