@@ -42,8 +42,16 @@ end
 end
 p File.same_contents('output1', 'output2') # => true
 open("output1", 'a') { |f| f << 'x' }
-open("ouptut2", 'a') { |f| f << 'y' }
+open("output2", 'a') { |f| f << 'y' }
 p File.same_contents('output1', 'output2') # => false
 p File.same_contents('nosuchfile', 'output1') # => false
 p File.same_contents('nosuchfile', 'nosuchfile2') # => true
 
+s1 = "This is line one.\nThis is line two.\nThis is line three.\n"
+s2 = "This is line 1.\nThis is line 2.\nThis is line 3.\n"
+
+# For Unix system
+# Whatever inside %x{....} will be executed as a shell command
+open('old_file', 'w') { |f| f << s1 }
+open('new_file', 'w') { |f| f << s2 }
+puts %x{diff old_file new_file}
