@@ -13,3 +13,7 @@ Dir.mkdir "doomed_directory"
 p File.exist? "doomed_directory"
 FileUtils.remove_dir "doomed_directory"
 File.exist? "doomed_directory"
+
+Dir.mkdir "/tmp/doomed_directory"
+FileUtils.rm_rf("/tmp/doomed_directory", :secure => true)
+File.exist? "/tmp/doomed_directory"
