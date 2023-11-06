@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+# IPv4 with prefix, compute subnet mask to find network address
 # Function to validate the IP address and prefix length
 def valid_ip_and_prefix?(ip_with_prefix)
   ip, prefix_length = ip_with_prefix.split('/')
