@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+# IPv4 to binary, ip function class added (get_ip_class)
 def valid_ip?(ip)
   !!ip.match(/\A(\d{1,3}\.){3}\d{1,3}\z/) && ip.split('.').map(&:to_i).all? { |octet| octet.between?(0,255) }
 end
