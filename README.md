@@ -8,3 +8,4 @@
 - Various codingame.com challenges codes.
 - Diverses Ruby source documentation
 - Detailed personal notes and comments
+- Utilily scripts
