@@ -8,4 +8,3 @@ p Time.now.to_f
 hash = { "key1" => "value1", "key2" => "value2" }.to_a
 p hash
 
-# test comment
