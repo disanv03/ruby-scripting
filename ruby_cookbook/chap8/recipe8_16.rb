@@ -79,8 +79,7 @@ p s3.string # => "string"
 #       Converting an object into a format that can
 #       be easily saved to a persistent storage
 #   - singleton:
-#       Design pattern used to ensure that a class has only
-#       one instance and provides a global point of access to it.
+#       A method defined on one specific object
 #   - tainted:  
 #       In Ruby an object is tainted if it is affected by data from
 #       an external source
