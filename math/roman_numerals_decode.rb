@@ -28,7 +28,7 @@ def roman_to_arabic(roman)
 end
 
 
-puts roman_to_arabic("MDCLXVI")
-puts roman_to_arabic("MMVIII")
-puts roman_to_arabic("MCMXC")
+puts roman_to_arabic("MDCLXVI") #=> 1666
+puts roman_to_arabic("MMVIII") #=> 2008
+puts roman_to_arabic("MCMXC") #=> 1990
 
