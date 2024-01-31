@@ -5,6 +5,7 @@
 
 ### Resources:
 - Ruby Cookbook by Lucas Carlson, Leonard Richardson
+- Grokking Algorithms by Aditya Y. Bhargava
 - Various codingame.com challenges codes.
 - Diverses Ruby source documentation
 - Detailed personal notes and comments
