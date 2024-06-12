@@ -16,6 +16,13 @@
 #
 # The main point it's to demonstrate that action can still be done
 # on the way back to the recursive calls, from where it left off.
+#
+# Analogy to a Stack:
+#
+# - Each recursive call adds a new frame to the stack (a last in, first-out stucture)
+# - The base case is where the recursion stops adding frames and starts removing them
+# - As each call returns, it "pops" off the stack, and the function continues to execute
+#   from where it left off in the previous frame.
 
 
 def countdown(i)
