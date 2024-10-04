@@ -18,7 +18,16 @@ def calculate_subnet_mask(prefix)
   binary_mask[0...prefix] = '1' * prefix
   octets = binary_mask.scan(/.{8}/)
   decimal_octets = octets.map { |octet| octet.to_i(2) }
-  decimal_octets.join('.')
+  return decimal_octets.join('.'), octets.join(' ')
 end
 
-puts calculate_subnet_mask(prefix)
+def calculate_usable_hosts(prefix)
+  (2**(32 - prefix)) - 2
+end
+
+decimal_mask, binary_mask = calculate_subnet_mask(prefix)
+usable_hosts = calculate_usable_hosts(prefix)
+
+puts "Decimal Notation: #{decimal_mask}"
+puts "Binary Notation: #{binary_mask}"
+puts "Usable Hosts: #{usable_hosts}"
