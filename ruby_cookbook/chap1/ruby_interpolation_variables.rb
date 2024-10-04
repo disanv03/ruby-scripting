@@ -1,4 +1,9 @@
+# Substituing Variables into Strings
 # double quotes for scans for special substitution codes.
+
+# Any text kept within the brackets of the special {} marker is interpreted
+# a a Ruby expression. The result of that expression is substituted into
+# the string that gets created
 number = 5
 "The number is #{number}."
 "The number is #{5}."
@@ -31,4 +36,6 @@ ex = <<END
 <<any_name
 	Here you can write any text
 any_name
+
+
 

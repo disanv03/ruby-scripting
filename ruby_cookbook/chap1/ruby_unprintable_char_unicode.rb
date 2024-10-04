@@ -28,4 +28,5 @@ puts %Q{foo\tbar}
 puts 'foo\tbar'
 puts %q{foo\tbar}
 
-
+?\C-a
+=> "\u0001"
